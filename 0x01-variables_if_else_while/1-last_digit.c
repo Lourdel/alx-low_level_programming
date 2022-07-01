@@ -2,11 +2,11 @@
 #include<time.h>
 #include<stdio.h>
 /**
- * Main- determines either number is grater than 5, less than 6 or is 0
+ * main- determines either number is grater than 5, less than 6 or is 0
  *
- * Description: print the last digit of the number stored in the variable n
  *
- * Return:always 0 (success)
+ *
+ * Return: always 0
 */
 int main(void)
 
