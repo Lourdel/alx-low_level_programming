@@ -2,13 +2,11 @@
 #include<time.h>
 #include<stdio.h>
 
-/* 
+/** 
  *
- * *Assign a random varriable n and assess whether positive or negative
+ *main- determines if number is  positive or negative
  *
- * *
- *
- * *Always return 0
+ *Return: always 0 (success)
  *
  * */
 int main(void)
@@ -17,11 +15,15 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n<0)
+	if (n > 0)
+	{	
 		printf("%d is positive\n", n);
-	if (n==0)
+	}
+	else if (n==0)
+	{
 		printf ("%d is zero\n", n);
-	if (n<0)
+	}
+	else
 	{
 		printf ("%d is negative\n", n);
 	}
