@@ -7,6 +7,10 @@ int main(void)
 {
 	int i;
 
+	i = 1;
+
+	printf("%d", i);
+
 	for (i = 1; i <= 100; i++)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
