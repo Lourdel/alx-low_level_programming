@@ -6,17 +6,17 @@
 /**
  * main - randomly generates passwords
  *
- * @n - password length
  * random_password_gen - function to generate a random password
- * Return : string
+ * @n: - password length
+ * Return: always 0
 */
-Void random_password_gen(int n)
+void random_password_gen(int n)
 {
 	int i = 0;
 
 	int randomizer = 0;
 
-	srand((insigned int)(time(NULL)));
+	srand((unsigned int)(time(NULL)));
 	char numbers[] = "0123456789";
 	char letter[] = "abcdefghijklmnopqrstuvwxyz";
 	char LETTER[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -37,7 +37,7 @@ Void random_password_gen(int n)
 		else if (randomizer == 2)
 		{
 			password[i] = symbols[rand() % 8];
-			ramdomizer = rand() % 4;
+			randomizer = rand() % 4;
 			printf("%c", password[i]);
 		}
 		else if (randomizer == 3)
@@ -53,6 +53,7 @@ Void random_password_gen(int n)
 			printf("%c", password[i]);
 		}
 	}
+	printf("\n");
 }
 
 int main(void)
