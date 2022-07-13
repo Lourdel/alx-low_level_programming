@@ -18,8 +18,11 @@ int main(void)
 
 		if ((c + r) > 2772)
 			break;
+
 		c = c + r;
+
 		printf("%c", r);
+
 	}
 	printf("%c\n", (2772 - c));
 
