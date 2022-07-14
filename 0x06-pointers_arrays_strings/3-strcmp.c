@@ -1,13 +1,14 @@
 #include "main.h"
+
 /**
  *_strcmp - compares two strings
  * @s1: first string
  * @s2: second string
- * Return: 0 if s1 and s2 are equal
+ * Return: 0 if s1 and s2 are equals
  * another number if not.
 */
 
-char *_strcmp(char *s1, char *s2)
+int *_strcmp(char *s1, char *s2)
 {
 	int i = 0, res = 0;
 
@@ -19,5 +20,6 @@ char *_strcmp(char *s1, char *s2)
 		res = *(s1 + i) - *(s2 + i);
 		i++;
 	}
+
 	return (res);
 }
