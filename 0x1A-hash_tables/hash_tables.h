@@ -1,4 +1,4 @@
-# ifndef __HASH__ 
+# ifndef __HASH__
 # define __HASH__
 
 #include <stdio.h>
